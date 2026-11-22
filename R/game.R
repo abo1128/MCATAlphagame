@@ -45,3 +45,35 @@ score_game <- function(game) {
   matches <- mapply(check_answer, game$answers, game$clues$answer)
   sum(matches, na.rm = TRUE)
 }
+#' Play MCAT alphabet game
+#'
+#' Shows one clue at a time and reads the player's typed answer.
+#' Stops when all clues are answered or the time limit is reached,
+#' then prints the score.
+#'
+#' @param time_limit Number of seconds the player is allowed. Default is 180.
+#' @return The finished `alphabet_game` object, returned invisibly.
+#' @examples
+#' if (interactive()) {
+#'   play_game()
+#' }
+#' @export
+play_game <- function(time_limit = 180) {
+  game <- new_game(time_limit)
+  start <- as.numeric(Sys.time())
+  for (i in 1:nrow(game$clues)) {
+    elapsed <- as.numeric(Sys.time()) - start
+    if (elapsed > time_limit) {
+      cat("Time is up!\n")
+      break
+    }
+    if (game$clues$mode[i] == "starts") {
+      cat("Starts with", game$clues$letter[i], ":", game$clues$clue[i], "\n")
+    } else {
+      cat("Contains", game$clues$letter[i], ":", game$clues$clue[i], "\n")
+    }
+    game$answers[i] <- readline("Answer: ")
+  }
+  cat("Score:", score_game(game), "out of", nrow(game$clues), "\n")
+  invisible(game)
+}
