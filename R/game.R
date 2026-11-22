@@ -31,3 +31,17 @@ print.alphabet_game <- function(x, ...) {
   cat("Time limit:", x$time_limit, "seconds\n")
   invisible(x)
 }
+#' Game scoring
+#'
+#' Counts how many of the answers are correct
+#'
+#' @param game An object of class `alphabet_game`
+#' @return Number of correct answers.
+#' @examples
+#' game <- new_game()
+#' score_game(game)
+#' @export
+score_game <- function(game) {
+  matches <- mapply(check_answer, game$answers, game$clues$answer)
+  sum(matches, na.rm = TRUE)
+}

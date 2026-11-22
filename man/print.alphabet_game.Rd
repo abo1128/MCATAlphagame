@@ -2,7 +2,7 @@
 % Please edit documentation in R/game.R
 \name{print.alphabet_game}
 \alias{print.alphabet_game}
-\title{Builds an MCAT alphabet game}
+\title{Prints an MCAT alphabet game}
 \usage{
 \method{print}{alphabet_game}(x, ...)
 }

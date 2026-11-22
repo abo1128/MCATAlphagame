@@ -3,3 +3,4 @@
 S3method(print,alphabet_game)
 export(check_answer)
 export(new_game)
+export(score_game)
