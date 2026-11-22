@@ -17,7 +17,7 @@ new_game <- function(time_limit = 180) {
   class(game) <- "alphabet_game"
   game
 }
-#' Builds an MCAT alphabet game
+#' Prints an MCAT alphabet game
 #'
 #' Shows a short summary of the game without revealing any answers.
 #'
