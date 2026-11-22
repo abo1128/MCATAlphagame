@@ -10,7 +10,7 @@
 #' @export
 new_game <- function(time_limit = 180) {
   game <- list(
-    clues = mcat_clues,
+    clues = MCATAlphagame::mcat_clues,
     answers = rep(NA_character_, nrow(mcat_clues)),
     time_limit = time_limit
   )
