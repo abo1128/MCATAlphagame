@@ -11,7 +11,7 @@
 new_game <- function(time_limit = 180) {
   game <- list(
     clues = MCATAlphagame::mcat_clues,
-    answers = rep(NA_character_, nrow(mcat_clues)),
+    answers = rep(NA_character_, nrow(MCATAlphagame::mcat_clues)),
     time_limit = time_limit
   )
   class(game) <- "alphabet_game"
