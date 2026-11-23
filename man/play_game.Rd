@@ -10,12 +10,12 @@ play_game(time_limit = 180)
 \item{time_limit}{Number of seconds the player is allowed. Default is 180.}
 }
 \value{
-The finished \code{alphabet_game} object, returned invisibly.
+The finished \code{alphabet_game} object with a score and the results.
 }
 \description{
 Shows one clue at a time and reads the player's typed answer.
 Stops when all clues are answered or the time limit is reached,
-then prints the score.
+then prints the score and a review of the wrong answers.
 }
 \examples{
 if (interactive()) {

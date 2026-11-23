@@ -19,7 +19,7 @@ library(MCATAlphagame)
 
 game <- new_game()
 game
-play_game()
+play_game(180)
 ```
 
 The player sees a clue and types the correlated answer
