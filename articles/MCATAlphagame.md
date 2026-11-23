@@ -1,0 +1,6 @@
+# MCATAlphagame
+
+``` r
+
+library(MCATAlphagame)
+```

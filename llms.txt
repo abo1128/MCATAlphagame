@@ -1,0 +1,72 @@
+# MCAT Alphabet Game
+
+The objective of the game is to complete the alphabet using MCAT clues
+given for each letter.
+
+## Installation
+
+``` r
+
+remotes::install_github("abo1128/MCATAlphagame")
+```
+
+## How to play
+
+In a 180 second time limit, the player gets one clue per letter, and
+each clue has a correlated answer. The clues either start with the
+letter or contain the certain letter.
+
+## Example
+
+``` r
+
+library(MCATAlphagame)
+
+game <- new_game()
+game
+play_game(180)
+```
+
+The player sees a clue and types the correlated answer
+
+## Functions
+
+- [`new_game()`](https://abo1128.github.io/MCATAlphagame/reference/new_game.md):
+  Starts new game
+- [`check_answer()`](https://abo1128.github.io/MCATAlphagame/reference/check_answer.md):
+  Checks answers of each question
+- [`score_game()`](https://abo1128.github.io/MCATAlphagame/reference/score_game.md):
+  Amount of correct answers in time allotted
+- [`play_game()`](https://abo1128.github.io/MCATAlphagame/reference/play_game.md):
+  Play the game
+- `mcat_clues`: Gives clues of game for each letter of alphabet
+
+## AI use statement
+
+I used AI to help with some of the code and errors. It explained the
+check() notes. I tested and edited the code and can explain it. I wrote
+the 26 MCAT clues, the game idea, my own documentation wording, and the
+clue wording in play_game. The full list is in AI_USE.md.
+
+# Package index
+
+## All functions
+
+- [`check_answer()`](https://abo1128.github.io/MCATAlphagame/reference/check_answer.md)
+  : Check a player's answer
+- [`mcat_clues`](https://abo1128.github.io/MCATAlphagame/reference/mcat_clues.md)
+  : MCAT clues for the alphabet game
+- [`new_game()`](https://abo1128.github.io/MCATAlphagame/reference/new_game.md)
+  : MCAT Alphabet game
+- [`play_game()`](https://abo1128.github.io/MCATAlphagame/reference/play_game.md)
+  : Play MCAT alphabet game
+- [`print(`*`<alphabet_game>`*`)`](https://abo1128.github.io/MCATAlphagame/reference/print.alphabet_game.md)
+  : Prints an MCAT alphabet game
+- [`score_game()`](https://abo1128.github.io/MCATAlphagame/reference/score_game.md)
+  : Game scoring
+
+# Articles
+
+### All vignettes
+
+- [MCATAlphagame](https://abo1128.github.io/MCATAlphagame/articles/MCATAlphagame.md):
