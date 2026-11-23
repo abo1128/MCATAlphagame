@@ -34,4 +34,4 @@ The player sees a clue and types the correlated answer
 
 ## AI use statement
 
-I used AI to help with some of the code and errors. Itexplained the check() notes. I tested and edited the code and can explain it. I wrote the 26 MCAT clues, the game idea, my own documentation wording, and the clue wording in play_game. The full list is in AI_USE.md.
+I used AI to help with some of the code and errors. It explained the check() notes. I tested and edited the code and can explain it. I wrote the 26 MCAT clues, the game idea, my own documentation wording, and the clue wording in play_game. The full list is in AI_USE.md.
