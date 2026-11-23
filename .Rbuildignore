@@ -3,3 +3,7 @@
 ^LICENSE\.md$
 ^data-raw$
 ^AI_USE\.md$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$
