@@ -49,10 +49,10 @@ score_game <- function(game) {
 #'
 #' Shows one clue at a time and reads the player's typed answer.
 #' Stops when all clues are answered or the time limit is reached,
-#' then prints the score.
+#' then prints the score and a review of the wrong answers.
 #'
 #' @param time_limit Number of seconds the player is allowed. Default is 180.
-#' @return The finished `alphabet_game` object, returned invisibly.
+#' @return The finished `alphabet_game` object with a score and the results.
 #' @examples
 #' if (interactive()) {
 #'   play_game()
