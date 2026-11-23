@@ -75,5 +75,18 @@ play_game <- function(time_limit = 180) {
     game$answers[i] <- readline("Answer: ")
   }
   cat("Score:", score_game(game), "out of", nrow(game$clues), "\n")
+  cat("\nReview:\n")
+  for (i in 1:nrow(game$clues)) {
+    typed <- game$answers[i]
+    correct <- game$clues$answer[i]
+    if (is.na(typed)) {
+      typed <- "(no answer)"
+    }
+    if (!check_answer(typed, correct)) {
+      cat(game$clues$letter[i], ": you typed ", typed,
+          ", correct answer is ", correct, "\n", sep = "")
+    }
+  }
   invisible(game)
 }
+
